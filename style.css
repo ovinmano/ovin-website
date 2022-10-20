@@ -161,9 +161,88 @@ a{
   color: white;
   text-decoration: none;
 }
+/**************** ====contact==== ****************/
+.cont-container{
+  width: 90%;
+  margin-top: 10px;
+  padding: 30px 0px;
+  margin-left: auto;
+  background:  rgb(14, 44, 48);
+  border-radius: 4px;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.link {
+  list-style: none;
+  width: 20%;
+  padding: 10px;
+  display: inline-block;
+}
+.icon-links{
+  width: 90%;
+  margin-top: 40px;
+  margin-left: auto;
+  background:  rgb(14, 44, 48);
+  border-radius: 3px;
+  height: 10vh;
+  font-size: 25px;
+  margin-right: auto;
+  margin-bottom: auto;
+ 
+}
+.icon-links:hover{
+  box-shadow: 4px -3px 9px 0px rgb(0, 0, 0);
+}
+.fa-linkedin,.fa-github,.fa-square-instagram,.fa-square-twitter{
+  color: rgb(230, 223, 215);
+  text-align: center;
+}
+.mail,.address{
+  margin-top: 50px;
+ }
+ .fa-phone,.fa-envelope-circle-check,.fa-address-book{
+  font-size:40px;
+  color: white;
+ }
+ h5{
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.548);
+ }
+ .cont-container p{
+  color: rgb(255, 255, 255);
+ }
+
+ /* h4,p,.btn{
+  font-size: 15px;
+  margin-top: 15px;
+} */
+
+/* arrow */
+
+/* .arrow{
+  margin-right:60%;
+  width: 30px;
+  height: 20px;
+  font-size:25px ;
+}
+.arrows,#arrow-mark{
+  font-size:25px;
+}
+
+#arrow-marks{
+  padding-left: 20px;
+  font-size:25px;
+  margin-left: 50%;
+} */
 @media (max-width: 1000px){
   nav{
     padding: 0 40px 0 50px;
+  }
+  .pro-content{
+    margin-top: 180px;
+  }
+  .fa-linkedin,.fa-github,.fa-square-instagram,.fa-square-twitter{
+    margin-top: 20px;
   }
 
 }
@@ -261,6 +340,10 @@ a{
     .btn{
       width: 24%;
     }
+    /* ========contact========== */
+    .pro-content{
+      margin-top: 200px;
+    }
       
 }
 @media(max-width:500px){
@@ -292,6 +375,10 @@ a{
     }
     h4,.pp{
       font-size: 13px;
+    }
+    /* =========contact=========== */
+    .pro-content{
+      margin-top: 180px;
     }
 }
 
