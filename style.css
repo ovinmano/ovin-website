@@ -153,13 +153,13 @@ section{
     .content div{
     font-size: 20px;
     font-weight: 700;
-    margin-left:60px;
+    margin-left:80px;
     /* margin-top:70%; */
   }
   .content img{
     width: 150px;
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 15%;
     box-shadow: #000 3px 0px 7px 1px;
     border-radius: 3px;
