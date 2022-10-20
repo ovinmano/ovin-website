@@ -101,10 +101,71 @@ section{
   /* .name,.study,.role{
     color: rgb(247, 77, 176);
   } */
+
+  /* *************============projects=========********** */
+  /* =====projects===== */
+h2{
+  /* width: 260px; */
+  color: black;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.pro-content{
+  text-align: center;
+  margin-top: 10%;
+}
+.pro-course{
+  background: rgb(14, 44, 48);
+  padding: 10px 10px;
+  margin-left: 10px;
+  box-shadow: 4px -3px 15px 0px rgb(0, 0, 0);
+}
+.pro-course:first-child{
+  margin-left: 0px;
+}
+#hh,#ht,#hm{
+  width: 90%;
+  border-radius: 3px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.btn{
+  margin: 10px;
+  border-radius: 10px;
+  width: 14%;
+  color: white;
+  padding: 2px;
+  background: transparent;
+  border: 1px solid;
+}
+.btn:hover{
+  background:rgb(7, 78, 66);
+  transition: transform 0.7s;
+  transform: translatex(-10px);
+}
+.btn a:hover{
+  color: rgb(0, 0, 0);
+}
+h4{
+  margin: 10px;
+  color:#000;
+}
+.pp{
+  color:rgb(255, 255, 255) ;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
 @media (max-width: 1000px){
   nav{
     padding: 0 40px 0 50px;
   }
+
 }
 @media (max-width: 920px) {
   nav .menu-btn i{
@@ -150,10 +211,10 @@ section{
     color: rgb(0, 0, 0);
     border: 1px solid white;
   }
-    .content div{
+  .content div{
     font-size: 20px;
     font-weight: 700;
-    margin-left:80px;
+    margin-left:60px;
     /* margin-top:70%; */
   }
   .content img{
@@ -182,6 +243,24 @@ section{
         border-radius: 3px;
         transform: translate(-50%, -50%);
     }
+    .pro-course{
+      padding: 10px 9px;
+    }
+    #ht{
+      margin-top: 90px;
+      width: 90%;
+    }
+      #hh,#hm{
+      width: 90%;
+      border-radius: 3px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+    }
+    .btn{
+      width: 24%;
+    }
       
 }
 @media(max-width:500px){
@@ -191,4 +270,28 @@ section{
         margin-left:10px;
         margin-top:100%;
     }
+    /* ===========projects============= */
+    .pro-course{
+      padding: 10px 9px;
+    }
+    #ht{
+      margin-top: 150px;
+      width: 90%;
+    }
+      #hh,#hm{
+      width: 90%;
+      border-radius: 3px;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+    }
+    .btn{
+      width: 24%;
+      font-size: 12px;
+    }
+    h4,.pp{
+      font-size: 13px;
+    }
 }
+
