@@ -211,6 +211,10 @@ a{
  .cont-container p{
   color: rgb(255, 255, 255);
  }
+.ovin{
+  color: white;
+  font-size: 19px;
+ }
 
  /* h4,p,.btn{
   font-size: 15px;
