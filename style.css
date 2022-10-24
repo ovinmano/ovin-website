@@ -62,15 +62,11 @@ section{
     float:left;
     height: 100vh;
 }
-
-#about{
-    background-color:aqua ;
-}
 #projects{
- background: red;
+ background: white;
 }
 #contact{
-    background: rgb(214, 218, 7);
+    background: white;
 } 
 /***** =========section 1============= *****/
 .content{
@@ -116,12 +112,23 @@ h2{
   left: 50%;
   transform: translate(-50%,-50%);
 }
+h2::after{
+  content: "";
+  display: block;
+  height: 3px;
+  transform: scaleX(0);
+  background: rgb(22, 24, 134);
+  transition: transform 350ms;
+}
+li:hover::after,h2:hover::after{
+  transform: scaleX(1);
+}
 .pro-content{
   text-align: center;
-  margin-top: 10%;
+  margin-top: 150px;
 }
 .pro-course{
-  background: rgb(14, 44, 48);
+  background: rgb(22, 24, 134);
   padding: 10px 10px;
   margin-left: 10px;
   box-shadow: 4px -3px 15px 0px rgb(0, 0, 0);
@@ -147,7 +154,7 @@ h2{
   border: 1px solid;
 }
 .btn:hover{
-  background:rgb(7, 78, 66);
+  background:rgb(43, 197, 184);
   transition: transform 0.7s;
   transform: translatex(-10px);
 }
@@ -156,7 +163,7 @@ h2{
 }
 h4{
   margin: 10px;
-  color:#000;
+  color:#fff;
 }
 .pp{
   color:rgb(255, 255, 255) ;
@@ -171,7 +178,7 @@ a{
   margin-top: 10px;
   padding: 30px 0px;
   margin-left: auto;
-  background:  rgb(14, 44, 48);
+  background: rgb(30, 32, 151);
   border-radius: 4px;
   margin-right: auto;
   margin-bottom: auto;
@@ -187,7 +194,7 @@ a{
   width: 90%;
   margin-top: 40px;
   margin-left: auto;
-  background:  rgb(14, 44, 48);
+  background: rgb(30, 32, 151);
   border-radius: 3px;
   height: 20%;
   font-size: 25px;
@@ -213,6 +220,9 @@ a{
  }
  .icon-links ul li{
   font-size: 35px;
+ }
+ .cont-container p{
+  color: white;
  }
  .ovin{
   /* color: white; */
