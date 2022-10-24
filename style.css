@@ -105,6 +105,9 @@ section{
 
   /* *************============projects=========********** */
   /* =====projects===== */
+.projects{
+  height: 800px;
+}
 h2{
   /* width: 260px; */
   color: black;
