@@ -207,6 +207,9 @@ a{
 .fa-linkedin,.fa-github,.fa-square-instagram,.fa-square-twitter{
   color: #fff;
 }
+.fa-linkedin:hover,.fa-github:hover,.fa-square-instagram:hover,.fa-square-twitter:hover{
+  color: black;
+}
 .mail,.address{
   margin-top: 50px;
  }
