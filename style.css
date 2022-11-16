@@ -67,11 +67,8 @@ section{
 }
 #contact{
     background: white;
-} 
-#login{
-    background: white;
-    height: 1000px;
 }
+
 /***** =========section 1============= *****/
 .content{
     position: absolute;
@@ -238,9 +235,14 @@ a{
   text-align: center;
  }
  /* =========login page========== */
+ #login{
+    background: white;
+    margin-top: 0px;
+    height: 750px;
+}
  .wrapper{
     width: 500px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: auto;
     background:#d9dee2;
     border: 1px solid rgba(161, 152, 152, 0.473);
@@ -252,11 +254,11 @@ a{
     box-shadow: 3px -2px 7px 0px rgba(146, 134, 134, 0.836);
 }
 .login-page{
-    margin-top: 200px;
+    margin-top: -10px;
 }
 .login{
     text-align: center;
-    margin-top: 350px;
+    margin-top: 80px;
 }
 .fa-user-pen{
     border-radius: 50%;
@@ -426,7 +428,8 @@ a{
   }
   nav ul li{
     width: 50%;
-    text-align: center;left: 50%;
+    text-align: center;
+    left: 50%;
     /* border: 1px solid white; */
     border-radius: 5px;
     margin: 40px 25%;
