@@ -1,113 +1,565 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+html{
+    scroll-behavior: smooth;
+}
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: rgb(30, 32, 151);
+  box-shadow: #000 0px 0px 9px 7px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  /* flex-wrap: wrap; */
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 35px;
+}
+nav ul li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+section{
+    position: relative;
+    width: 100%;
+    float:left;
+    height: 100vh;
+}
+#projects{
+ background: white;
+}
+#contact{
+    background: white;
+} 
+/***** =========section 1============= *****/
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding: 0 30px;
+    color: #1b1b1b;
+  }
 
-<head>
-    <meta charset="utf-8">
-    <!--------- Responsive Navigation Menu------>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- *****************======= icon links ========******************* -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+  .content div{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left:290px;
+  }
+  .content img{
+    width: 260px;
+    position: absolute;
+    top: 70%;
+    left: 18%;
+    box-shadow: #000 3px 0px 7px 1px;
+    border-radius: 3px;
+    transform: translate(-50%, -50%);
+  }
+  /* .name,.study,.role{
+    color: rgb(247, 77, 176);
+  } */
 
-<body>
-    <section id="about-me">
-        <nav>
-            <div class="logo">OVIN</div>
-            <input type="checkbox" id="click">
-            <label for="click" class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-                <li><a class="active" href="#about-me">ABOUT ME</a></li>
-                <!-- <li><a href="#about">About</a></li> -->
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <!-- <li><a href="#feedback">Feedback</a></li> -->
-            </ul>
-        </nav>
-        <div class="content">
-            <div class="name"><img src="3.jpg" alt="3.jpg">I'AM
-                <p class="name">MANOJKUMAR</p>
-                <p class="role">FRONDEND DEVELOPER</p>
-                <p class="study">HTML5 | CSS3 | JAVASCRIPT | REACTJS</p>
-            </div>
-        </div>
-    </section>
-    <!--*********** =========projects=========*********** -->
-    <section id="projects" class="projects">
-        <div class="pro-heading">
-            <h2>PROJECTS</h2>
-        </div>
-        <div class="pro-content">
-            <!-- <div>
-                <a href="#about" class="arrow"><i class="fa-solid fa-arrow-up"></i>ABOUT ME</a>
-                <a href="#contact" class="arrows"><i class="fa-solid fa-arrow-down"></i>CONTACT</a>
-            </div> -->
-            <div class="pro-course" id="ht">
-                <h4>GLASSMORPHISHM WEBSITE</h4>
-                <p class="pp">Completed colorfull animation website by using html,css,javaScript</p>
-                <button class="btn"><a href="https://ovinmano.github.io/Glassmorphism-portfolio/">Visit
-                        here</a></button>
-            </div>
-            <div class="pro-course" id="hh">
-                <h4>FORM VALIDATION</h4>
-                <p class="pp">Completed user login form validation by using html,css,javaScript</p>
-                <button class="btn"><a href="https://ovinmano.github.io/form-validation/">Visit
-                        here</a></button>
-            </div>
-            <div class="pro-course" id="hm">
-                <h4>REACT PROJECT</h4>
-                <p class="pp">The work is not complete and the project is currently being implemented</p>
-                <button class="btn"><a href=" https://ovinmano.github.io/reactjs-basics/">Visit
-                        here</a></button>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <!-- =======contact======= -->
-        <div class="pro-content" id="contact">
-            <h2>CONTACT</h2>
-            <!-- <div><a href="#about" id="arrow-mark"><i class="fa-solid fa-arrows-up-to-line"></i>ABOUT ME</a>
-                <a href="#projects" id="arrow-marks"><i class="fa-solid fa-arrow-up"></i>PROJECTS</a>
-            </div> -->
-            <div class="cont-container">
-                <div class="phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <h5>phone</h5>
-                    <p class="phn">7339072404</p>
-                </div>
-                <div class="mail">
-                    <i class="fa-solid fa-envelope-circle-check"></i>
-                    <h5>Email</h5>
-                    <p class="mail-id">manojrabeal123@gmail.com</p>
-                </div>
-                <div class="address">
-                    <i class="fa-solid fa-address-book"></i>
-                    <h5>ADDRESS</h5>
-                    <p class="add">Sivagangai (thirupathur)</p>
-                </div>
-            </div>
-            <div class="icon-links">
-                <ul>
-                    <!-- active social media links -->
-                    <li class="link"><a href="https://www.linkedin.com/in/ovin-mano-412934244">
-                            <i class="fa-brands fa-linkedin"></a></i></li>
-                    <li class="link"><a href="https://github.com/ovinmano">
-                            <i class="fa-brands fa-github"></a></i></li>
-                    <li class="link"><a href="https://instagram.com/ovin_mano?igshid=YmMyMTA2M2Y=">
-                            <i class="fa-brands fa-square-instagram"></a></i></li>
-                    <li class="link"><a href="https://twitter.com/ovinmano?t=hFcTjOldRPUOqGkYzUFiUQ&s=09">
-                            <i class="fa-brands fa-square-twitter"></i></a></li>
-                </ul>
-            </div>
-            <br><p class="ovin">©Ovin Mano-All Rights Reserved</p>
-            <br>
-            <br>
-        </div>
-    </section>
-</body>
-</html>
+  /* *************============projects=========********** */
+  /* =====projects===== */
+.projects{
+  height: 800px;
+}
+h2{
+  /* width: 260px; */
+  color: black;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  font-size: 40px;
+  transform: translate(-50%,-50%);
+}
+h2::after{
+  content: "";
+  display: block;
+  height: 3px;
+  transform: scaleX(0);
+  background: rgb(22, 24, 134);
+  transition: transform 350ms;
+}
+li:hover::after,h2:hover::after{
+  transform: scaleX(1);
+}
+.pro-content{
+  text-align: center;
+  margin-top: 150px;
+}
+.pro-course{
+  background: rgb(22, 24, 134);
+  padding: 10px 10px;
+  margin-left: 10px;
+  box-shadow: 4px -3px 15px 0px rgb(0, 0, 0);
+}
+.pro-course:first-child{
+  margin-left: 0px;
+}
+#hh,#ht,#hm{
+  width: 90%;
+  border-radius: 3px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.btn{
+  margin: 10px;
+  border-radius: 10px;
+  width: 14%;
+  color: white;
+  padding: 2px;
+  background: transparent;
+  border: 1px solid;
+}
+.btn:hover{
+  background:rgb(43, 197, 184);
+  transition: transform 0.7s;
+  transform: translatex(-10px);
+}
+.btn a:hover{
+  color: rgb(0, 0, 0);
+}
+h4{
+  margin: 10px;
+  color:#fff;
+}
+.pp{
+  color:rgb(255, 255, 255) ;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+/**************** ====contact==== ****************/
+.cont-container{
+  width: 90%;
+  margin-top: 10px;
+  padding: 30px 0px;
+  margin-left: auto;
+  background: rgb(30, 32, 151);
+  border-radius: 4px;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.link {
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  width: 24%;
+  margin: 20px 0;
+}
+.icon-links{
+  width: 90%;
+  margin-top: 40px;
+  margin-left: auto;
+  background: rgb(30, 32, 151);
+  border-radius: 3px;
+  height: 20%;
+  font-size: 25px;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.icon-links:hover{
+  box-shadow: 4px -3px 9px 0px rgb(0, 0, 0);
+}
+.fa-linkedin,.fa-github,.fa-square-instagram,.fa-square-twitter{
+  color: #fff;
+}
+.fa-linkedin:hover,.fa-github:hover,.fa-square-instagram:hover,.fa-square-twitter:hover{
+  color: black;
+}
+.mail,.address{
+  margin-top: 50px;
+ }
+ .fa-phone,.fa-envelope-circle-check,.fa-address-book{
+  font-size:40px;
+  color: white;
+ }
+ h5{
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.548);
+ }
+ .icon-links ul li{
+  font-size: 35px;
+ }
+ .cont-container p{
+  color: white;
+ }
+ .ovin{
+  /* color: white; */
+  font-size: 19px;
+  text-align: center;
+ }
+ /* =========login page========== */
+ .wrapper{
+    width: 500px;
+    margin-top: 20px;
+    margin-left: auto;
+    background:#d9dee2;
+    border: 1px solid rgba(161, 152, 152, 0.473);
+    border-radius: 4px;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+.wrapper:hover{
+    box-shadow: 3px -2px 7px 0px rgba(146, 134, 134, 0.836);
+}
+.login-page{
+    margin-top: 200px;
+}
+.login{
+    text-align: center;
+    margin-top: 350px;
+}
+.fa-user-pen{
+    border-radius: 50%;
+    border: 1px solid #bfbfbf;
+    padding: 30px 80px;
+    color: rgba(18, 19, 18, 0.603);
+    font-size: 50px;
+}
+.sign-content{
+    margin-top: 20px;
+    font-size: 25px;
+    background: rgba(255, 255, 0, 0.699);
+}
+.wrapper{
+    width: 480px;
+    padding: 40px 30px 50px 30px;
+    background:#f0f3f7;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+  }
+  .wrapper form{
+    margin: 20px 0;
+  }
+  form .field{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  form .field.shake{
+    animation: shake 0.3s ease-in-out;
+  }
+  @keyframes shake {
+    0%, 100%{
+      margin-left: 0px;
+    }
+    20%, 80%{
+      margin-left: -12px;
+    }
+    40%, 60%{
+      margin-left: 12px;
+    }
+  }
+  form .field .input-area{
+    height: 40px;
+    width: 100%;
+    position: relative;
+  }
+  form input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    background: none;
+    caret-color: #5372F0;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+  }
+  form .field input:focus,
+  form .field.valid input{
+    border-color: #5372F0;
+  }
+  form .field.shake input,
+  form .field.error input{
+    border-color: #dc3545;
+  }
+  .field .input-area i{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  .input-area .icon{
+    left: 15px;
+    color: #bfbfbf;
+    transition: color 0.2s ease;
+  }
+  .input-area .error-icon{
+    right: 15px;
+    color: #dc3545;
+  }
+  form input:focus ~ .icon,
+  form .field.valid .icon{
+    color: #5372F0;
+  }
+  form .field.shake input:focus ~ .icon,
+  form .field.error input:focus ~ .icon{
+    color: #bfbfbf;
+  }
+  form input::placeholder{
+    color: #bfbfbf;
+    font-size: 17px;
+  }
+  form .field .error-txt{
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+  }
+  form .field .error{
+    display: none;
+  }
+  form .field.shake .error,
+  form .field.error .error{
+    display: block;
+  }
+  form .pass-txt{
+    text-align: left;
+    margin-top: -10px;
+  }
+  .wrapper a{
+    color: #0969DA;
+    text-decoration: none;
+  }
+  .wrapper a:hover{
+    text-decoration: underline;
+  }
+  form input[type="submit"]{
+    height: 50px;
+    margin-top: 30px;
+    color: #000;
+    padding: 0;
+    border: none;
+    background: #35bb35;;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  form input[type="submit"]:hover{
+    background-color: #09d109;
+  }
+
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+  .pro-content{
+    margin-top: 180px;
+  }
+  .fa-linkedin,.fa-github,.fa-square-instagram,.fa-square-twitter{
+    margin-top: 20px;
+  }
+
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 82px;
+    left: -100%;
+    background: rgb(18, 115, 139);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 50%;
+    text-align: center;left: 50%;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    margin: 40px 25%;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    /* background: none; */
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+  }
+  .content div{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left:60px;
+    /* margin-top:70%; */
+  }
+  .content img{
+    width: 150px;
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    box-shadow: #000 3px 0px 7px 1px;
+    border-radius: 3px;
+    transform: translate(-50%, -50%);
+}
+}
+@media(max-width:820px){
+    .content div{
+        font-size: 25px;
+        font-weight: 700;
+        margin-left:10px;
+        margin-top:70%;
+      }
+      .content img{
+        width: 190px;
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        box-shadow: #000 3px 0px 7px 1px;
+        border-radius: 3px;
+        transform: translate(-50%, -50%);
+    }
+    .pro-course{
+      padding: 10px 9px;
+    }
+    #ht{
+      margin-top: 90px;
+      width: 90%;
+    }
+      #hh,#hm{
+      width: 90%;
+      border-radius: 3px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+    }
+    .btn{
+      width: 24%;
+    }
+    /* ========contact========== */
+    .pro-content{
+      margin-top: 200px;
+    }
+    .link {
+      list-style: none;
+      text-align: center;
+      display: inline-block;
+      width: 23%;
+      margin-top: 20px;
+    }
+    .icon-links{
+      width: 90%;
+      height: 10%;
+    }
+    /* =====login page====== */
+    .wrapper{
+        width: 400px;
+        padding: 40px 30px 50px 30px;
+        background:#f0f3f7;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+      }
+      
+}
+@media(max-width:500px){
+    .content div{
+        font-size: 20px;
+        font-weight: 700;
+        margin-left:10px;
+        margin-top:100%;
+    }
+    /* ===========projects============= */
+    .pro-course{
+      padding: 10px 9px;
+    }
+    #ht{
+      margin-top: 150px;
+      width: 90%;
+    }
+      #hh,#hm{
+      width: 90%;
+      border-radius: 3px;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+    }
+    .btn{
+      width: 24%;
+      font-size: 12px;
+    }
+    h4,.pp{
+      font-size: 13px;
+    }
+    /* =========contact=========== */
+    .pro-content{
+      margin-top: 180px;
+    }
+    /* =====login page==== */
+    .wrapper{
+        width: 350px;
+        padding: 40px 30px 50px 30px;
+        background:#f0f3f7;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+      }
+}
