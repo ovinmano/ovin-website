@@ -110,6 +110,7 @@ h2{
   position: absolute;
   top: 6%;
   left: 50%;
+  font-size: 40px;
   transform: translate(-50%,-50%);
 }
 h2::after{
@@ -232,28 +233,160 @@ a{
   font-size: 19px;
   text-align: center;
  }
-
- /* h4,p,.btn{
-  font-size: 15px;
-  margin-top: 15px;
-} */
-
-/* arrow */
-
-/* .arrow{
-  margin-right:60%;
-  width: 30px;
-  height: 20px;
-  font-size:25px ;
+ /* =========login page========== */
+ .wrapper{
+    width: 500px;
+    margin-top: 20px;
+    margin-left: auto;
+    background:#d9dee2;
+    border: 1px solid rgba(161, 152, 152, 0.473);
+    border-radius: 4px;
+    margin-right: auto;
+    margin-bottom: auto;
 }
-.arrows,#arrow-mark{
-  font-size:25px;
+.wrapper:hover{
+    box-shadow: 3px -2px 7px 0px rgba(146, 134, 134, 0.836);
 }
-#arrow-marks{
-  padding-left: 20px;
-  font-size:25px;
-  margin-left: 50%;
-} */
+.login-page{
+    margin-top: 200px;
+}
+.login{
+    text-align: center;
+    margin-top: 350px;
+}
+.fa-user-pen{
+    border-radius: 50%;
+    border: 1px solid #bfbfbf;
+    padding: 30px 80px;
+    color: rgba(18, 19, 18, 0.603);
+    font-size: 50px;
+}
+.sign-content{
+    margin-top: 20px;
+    font-size: 25px;
+    background: rgba(255, 255, 0, 0.699);
+}
+.wrapper{
+    width: 480px;
+    padding: 40px 30px 50px 30px;
+    background:#f0f3f7;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+  }
+  .wrapper form{
+    margin: 20px 0;
+  }
+  form .field{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  form .field.shake{
+    animation: shake 0.3s ease-in-out;
+  }
+  @keyframes shake {
+    0%, 100%{
+      margin-left: 0px;
+    }
+    20%, 80%{
+      margin-left: -12px;
+    }
+    40%, 60%{
+      margin-left: 12px;
+    }
+  }
+  form .field .input-area{
+    height: 40px;
+    width: 100%;
+    position: relative;
+  }
+  form input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    background: none;
+    caret-color: #5372F0;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+  }
+  form .field input:focus,
+  form .field.valid input{
+    border-color: #5372F0;
+  }
+  form .field.shake input,
+  form .field.error input{
+    border-color: #dc3545;
+  }
+  .field .input-area i{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  .input-area .icon{
+    left: 15px;
+    color: #bfbfbf;
+    transition: color 0.2s ease;
+  }
+  .input-area .error-icon{
+    right: 15px;
+    color: #dc3545;
+  }
+  form input:focus ~ .icon,
+  form .field.valid .icon{
+    color: #5372F0;
+  }
+  form .field.shake input:focus ~ .icon,
+  form .field.error input:focus ~ .icon{
+    color: #bfbfbf;
+  }
+  form input::placeholder{
+    color: #bfbfbf;
+    font-size: 17px;
+  }
+  form .field .error-txt{
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+  }
+  form .field .error{
+    display: none;
+  }
+  form .field.shake .error,
+  form .field.error .error{
+    display: block;
+  }
+  form .pass-txt{
+    text-align: left;
+    margin-top: -10px;
+  }
+  .wrapper a{
+    color: #0969DA;
+    text-decoration: none;
+  }
+  .wrapper a:hover{
+    text-decoration: underline;
+  }
+  form input[type="submit"]{
+    height: 50px;
+    margin-top: 30px;
+    color: #000;
+    padding: 0;
+    border: none;
+    background: #35bb35;;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  form input[type="submit"]:hover{
+    background-color: #09d109;
+  }
+
 @media (max-width: 1000px){
   nav{
     padding: 0 40px 0 50px;
@@ -375,6 +508,15 @@ a{
       width: 90%;
       height: 10%;
     }
+    /* =====login page====== */
+    .wrapper{
+        width: 400px;
+        padding: 40px 30px 50px 30px;
+        background:#f0f3f7;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+      }
       
 }
 @media(max-width:500px){
@@ -411,4 +553,13 @@ a{
     .pro-content{
       margin-top: 180px;
     }
+    /* =====login page==== */
+    .wrapper{
+        width: 350px;
+        padding: 40px 30px 50px 30px;
+        background:#f0f3f7;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+      }
 }
