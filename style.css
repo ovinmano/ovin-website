@@ -68,6 +68,10 @@ section{
 #contact{
     background: white;
 } 
+#login{
+    background: white;
+    height: 1000px;
+}
 /***** =========section 1============= *****/
 .content{
     position: absolute;
