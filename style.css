@@ -524,6 +524,9 @@ a{
         text-align: center;
         box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
       }
+    #login{
+        margin-top: 0px;
+    }
       
 }
 @media(max-width:500px){
@@ -569,4 +572,7 @@ a{
         text-align: center;
         box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
       }
+    #login{
+        margin-top: 0px;
+    }
 }
