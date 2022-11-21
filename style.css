@@ -67,6 +67,7 @@ section{
 }
 #contact{
     background: white;
+    
 }
 
 /***** =========section 1============= *****/
@@ -175,6 +176,9 @@ a{
   text-decoration: none;
 }
 /**************** ====contact==== ****************/
+#contact{
+  height: 800px;
+}
 .cont-container{
   width: 90%;
   margin-top: 10px;
@@ -198,7 +202,6 @@ a{
   margin-left: auto;
   background: rgb(30, 32, 151);
   border-radius: 3px;
-  height: 20%;
   font-size: 25px;
   margin-right: auto;
   margin-bottom: auto;
@@ -242,7 +245,7 @@ a{
 }
  .wrapper{
     width: 500px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: auto;
     background:#d9dee2;
     border: 1px solid rgba(161, 152, 152, 0.473);
@@ -417,7 +420,7 @@ a{
     top: 82px;
     left: -100%;
     background: rgb(18, 115, 139);
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     text-align: center;
     display: block;
@@ -456,6 +459,9 @@ a{
     margin-left:60px;
     /* margin-top:70%; */
   }
+  .content p{
+   margin-left:100px;
+  }
   .content img{
     width: 150px;
     position: absolute;
@@ -482,6 +488,9 @@ a{
         border-radius: 3px;
         transform: translate(-50%, -50%);
     }
+    .content p{
+      margin-left:0px;
+     }
     .pro-course{
       padding: 10px 9px;
     }
@@ -509,7 +518,7 @@ a{
       text-align: center;
       display: inline-block;
       width: 23%;
-      margin-top: 20px;
+      margin-top: 8px;
     }
     .icon-links{
       width: 90%;
@@ -524,7 +533,7 @@ a{
         text-align: center;
         box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
       }
-    #login{
+      #login{
         margin-top: 0px;
     }
       
@@ -536,6 +545,9 @@ a{
         margin-left:10px;
         margin-top:100%;
     }
+    .content p{
+      margin-left:0px;
+     }
     /* ===========projects============= */
     .pro-course{
       padding: 10px 9px;
@@ -572,7 +584,7 @@ a{
         text-align: center;
         box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
       }
-    #login{
+      #login{
         margin-top: 0px;
     }
 }
